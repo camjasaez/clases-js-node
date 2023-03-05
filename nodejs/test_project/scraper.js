@@ -46,8 +46,6 @@ const scraper = async (URL) => {
     cotizaciones.push(notebook);
   });
 
-  //Obtener el precio
-
   return cotizaciones;
 };
 
