@@ -70,5 +70,26 @@ const variableConst = '';
                Los objetos Map almacenan pares clave-valor y los objetos Set almacenan valores únicos.
 */
 
+/*
+    ! Operadores logicos
+    
+    && // AND, Y, a && b : a y b
+    || // OR, O, a || b : a o b
+/    ! // NOT, Negación, a = true : !a = false
+
+    ! Operadores de comparacion
+
+    
+    == // Igualdad a == b, a tiene el mismo valor que b
+    != // Distinto a ! = b, a tiene un valor diferente a b
+    === // Identidad a = = = b igual valor igual tipo de dato
+    !== // Sin Identidad a ! = = b igual valor o igual tipo de dato
+    > // Mayor que a > b
+    >= // Mayor o igual que a >= b
+    < // Menor que a < b
+    <= // Menor o igual que a <= b
+
+*/
+
 //? Diccionario:
 //? bloque: un bloque es cualquier sección de código delimitada por llaves
