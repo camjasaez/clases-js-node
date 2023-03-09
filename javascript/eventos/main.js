@@ -7,7 +7,3 @@ const btn = document.querySelector('#btnCalcular');
 function btnOnClick() {
   console.log(typeof input1.value);
 }
-
-btn.addEventListener('click', function () {
-  console.log('Se hizo clic en el botón');
-});
