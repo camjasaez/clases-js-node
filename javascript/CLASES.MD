@@ -35,3 +35,17 @@
         - Aplicaciones de escritorio
         - Aplicaciones móviles
         - Aplicaciones de IoT
+
+## Que veremos?
+
+    - Sintaxis básica: Para empezar a programar en JavaScript, es importante tener un conocimiento básico de la sintaxis del lenguaje, que incluye la estructura de los elementos como variables, operadores, funciones, bucles, condicionales, entre otros.
+
+    -Tipos de datos: En JavaScript, hay varios tipos de datos como números, cadenas, booleanos, objetos y matrices. Es importante comprender cómo funcionan y cómo se utilizan estos tipos de datos en el código.
+
+    -DOM (Modelo de Objeto de Documento): Es importante entender cómo funciona el DOM ya que es una interfaz de programación que permite a los desarrolladores interactuar con los elementos HTML y CSS de una página web.
+
+    -Eventos: Los eventos son una parte fundamental de la programación en JavaScript. Es importante comprender cómo funcionan los eventos y cómo se pueden utilizar para controlar la interacción del usuario con la página web.
+
+    -Funciones: Las funciones son un componente esencial de JavaScript, y son utilizadas para reutilizar el código y hacerlo más modular. Es importante entender cómo funcionan las funciones y cómo se pueden utilizar para crear código más eficiente.
+
+    -Asincronismo: En JavaScript, las operaciones asincrónicas son comunes y es importante entender cómo funcionan las promesas y las funciones asincrónicas para manejar eficazmente este tipo de operaciones.
