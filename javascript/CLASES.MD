@@ -49,3 +49,7 @@
     -Funciones: Las funciones son un componente esencial de JavaScript, y son utilizadas para reutilizar el código y hacerlo más modular. Es importante entender cómo funcionan las funciones y cómo se pueden utilizar para crear código más eficiente.
 
     -Asincronismo: En JavaScript, las operaciones asincrónicas son comunes y es importante entender cómo funcionan las promesas y las funciones asincrónicas para manejar eficazmente este tipo de operaciones.
+
+## Recursos utiles:
+
+    - Documentacion oficial de javascript: https://developer.mozilla.org/es/docs/Web/JavaScript
