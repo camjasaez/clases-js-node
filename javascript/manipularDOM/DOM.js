@@ -39,6 +39,17 @@
     * Interactuar especificamente con las clases:
         
         p.classList.add('nuevo') =>  <p class="parrafo nuevo">Soy un parrafo 2</p>
+        p.classList.remove('nuevo') =>  <p class="parrafo">Soy un parrafo 2</p>
+        p.classList.toggle('nuevo') =>  <p class="parrafo nuevo">Soy un parrafo 2</p> => <p class="parrafo">Soy un parrafo 2</p>
+        p.classList.contains('nuevo') =>  <p class="parrafo nuevo">Soy un parrafo 2</p> => true
 
+    * Interactuar con los inputs
+        Ej: const input = document.querySelector('input');
+        input.value = 'Hola mundo'
+        => <input value="Hola mundo"/>
+
+    * Crear nuevos nodos/etiquetas
+        document.createElement('div')
+        => <div></div>
     
 */
