@@ -53,3 +53,7 @@
 ## Recursos utiles:
 
     - Documentacion oficial de javascript: https://developer.mozilla.org/es/docs/Web/JavaScript
+
+## TODO:
+
+- En la parte del DOM, practicar con appendChild, removeChild, etc

@@ -6,8 +6,6 @@
 
 :root {
   --main-bg-color: #d0f4f0;
-  /* --secondary-bg-color: #F4D799;
-    --third-bg-color: #D0F4F0; */
   --secondary-bg-color: #f4d799;
   --third-bg-color: #f9f3e5;
   --border-color: #130f1c;
@@ -21,7 +19,6 @@ html {
   font-size: 62.5%;
 }
 
-/* F9F3E5 */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-bg-color);
