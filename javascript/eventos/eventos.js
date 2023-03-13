@@ -11,7 +11,8 @@
     html: <button id="btnCalcular">Calcular</button>
     js: 
         const btn = document.querySelector('#btnCalcular');
-
+        
+        A QUIÉN -          QUÉ ACCIÓN - CUAL FUNCION
         btn.addEventListener('click', function () {
             console.log('Se hizo clic en el botón');
         });
