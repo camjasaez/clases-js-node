@@ -11,7 +11,8 @@
     html: <button id="btnCalcular">Calcular</button>
     js: 
         const btn = document.querySelector('#btnCalcular');
-
+        
+        A QUIÉN -          QUÉ ACCIÓN - CUAL FUNCION
         btn.addEventListener('click', function () {
             console.log('Se hizo clic en el botón');
         });
@@ -27,10 +28,10 @@
     - mouseover: Se produce cuando el usuario mueve el cursor del ratón sobre un elemento.
 
     - keydown: Se produce cuando el usuario presiona una tecla del teclado.
-
-    - load: Se produce cuando se ha cargado completamente una página web.
-
+    
     - submit: Se produce cuando se envía un formulario.
+    
+    - load: Se produce cuando se ha cargado completamente una página web.
 
     - change: Se produce cuando cambia el valor de un campo de formulario, como una casilla de verificación o un menú desplegable.
 

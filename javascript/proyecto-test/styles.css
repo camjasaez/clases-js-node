@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #d0f4f0;
+  --secondary-bg-color: #f4d799;
+  --third-bg-color: #f9f3e5;
+  --border-color: #130f1c;
+  --main-text-color: #33322e;
+  --button-color: #8cd4cb;
+  --button-color-hover: #d0f4f0;
+  --font-size-xs: 1.55rem;
+  --font-size-md: 2rem;
+  --font-size-xl: 3rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main-bg-color);
+  border: 4px solid var(--border-color);
+  min-height: 100vh;
+  /* padding: 0.25rem; */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos del header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: var(--main-text-color);
+  background-color: var(--secondary-bg-color);
+  border: 4px solid var(--border-color);
+  /* margin: 0.25rem; */
+}
+
+.header__title {
+  margin: 0;
+}
+
+/* Estilos del navbar */
+.header__navbar {
+  display: flex;
+}
+
+.header__navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header__navbar-item {
+  margin: 0 1rem;
+}
+
+.header__navbar-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: var(--font-size-xl);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.input__card {
+  background-color: var(--third-bg-color);
+  border: 4px solid var(--border-color);
+  box-shadow: 12px 12px 0px var(--main-text-color);
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+/* Estilos de los botones */
+button {
+  background-color: var(--button-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-color-hover);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  grid-auto-rows: 32rem;
+  flex-wrap: wrap;
+}
+
+/* Estitos de la card */
+.card {
+  background-color: var(--third-bg-color);
+  border: 4px solid var(--border-color);
+  box-shadow: 12px 12px 0px var(--main-text-color);
+  border-radius: 24px;
+  width: 300px;
+  height: 30rem;
+  margin: 3rem;
+  /* overflow: hidden; */
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.card__info {
+  padding: 1rem;
+  border-top: 4px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.card__name {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.card__status,
+.card__species {
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: var(--font-size-xs);
+  }
+  .header__navbar-link {
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: var(--font-size-md);
+  }
+  .header__navbar-link {
+    font-size: var(--font-size-md);
+  }
+  .gallery {
+    flex-direction: row;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: var(--font-size-xl);
+  }
+  .header__navbar-link {
+    font-size: var(--font-size-xl);
+  }
+  .gallery {
+    flex-direction: row;
+  }
+}

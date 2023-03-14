@@ -19,6 +19,7 @@ sumar(1, 2); // 3
 const sumar = function (a, b) {
   return a + b;
 };
+
 sumar(1, 2); // 3
 
 // Funciones flecha: esta es una forma más concisa de definir funciones
@@ -27,6 +28,7 @@ sumar(1, 2); // 3
 const sumar = (a, b) => {
   return a + b;
 };
+
 sumar(1, 2); // 3
 
 //! Importante: Las funciones también pueden ser utilizadas como valores, lo que significa que

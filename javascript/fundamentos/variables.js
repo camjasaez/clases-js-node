@@ -3,7 +3,7 @@
 /*
     ! Variable var
 
-    * Utiliza para declarar una variable global o local.
+    * Utilizada para declarar una variable global o local.
     * Puede ser reasignada en cualquier momento.
 */
 var variableVar;
@@ -11,7 +11,7 @@ var variableVar;
 /*
     ! Variable let
 
-    * declarar una variable que está limitada al bloque en el que se define.
+    * Declarar una variable que está limitada al bloque en el que se define.
     * pueden ser reasignadas, pero no pueden ser redeclaradas en el mismo ámbito.
 */
 let variableLet;
@@ -19,7 +19,7 @@ let variableLet;
 /*
     ! Variable const
 
-    * declarar una variable de solo lectura.
+    * Declarar una variable de solo lectura.
     *  (su valor  no puede ser reasignado después de ser definido).
     * también están limitadas al bloque en el que se definen.
 
@@ -90,6 +90,3 @@ const variableConst = '';
     <= // Menor o igual que a <= b
 
 */
-
-//? Diccionario:
-//? bloque: un bloque es cualquier sección de código delimitada por llaves

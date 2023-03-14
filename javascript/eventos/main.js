@@ -5,5 +5,5 @@ const input2 = document.querySelector('#calculo2');
 const btn = document.querySelector('#btnCalcular');
 
 function btnOnClick() {
-  console.log(typeof input1.value);
+  console.log(input1.value);
 }
