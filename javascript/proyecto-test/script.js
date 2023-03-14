@@ -1,19 +1,3 @@
-{
-  `
-  <article class="card">
-    <img
-      src="${character.image}"
-      alt="${character.name}"
-      class="card__img"
-    />
-    <article class="card__info">
-      <h2 class="card__name">${character.name}</h2>
-      <p class="card__status">Status: ${character.status}</p>
-      <p class="card__species">Species: ${character.species}</p>
-    </article>
-  </article>`;
-}
-
 //Funcion principal
 async function main() {
   // Crear una constante con la URL de la API. => https://rickandmortyapi.com/
