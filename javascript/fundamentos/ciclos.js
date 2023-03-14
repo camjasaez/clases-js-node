@@ -51,6 +51,8 @@
         console.log(fruta);//manzana,banana,naranja
     }
 
+    En los objetos te mostraria el valor.
+
 */
 /*
     * while - recorre un bloque de código mientras se cumple una condición específica

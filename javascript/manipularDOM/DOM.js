@@ -51,5 +51,11 @@
     * Crear nuevos nodos/etiquetas
         const div = document.createElement('div')
         => <div></div>
+
+    * Añadir nodos al DOM
+        const body = document.querySelector('body')
+        const div = document.createElement('div')
+        body.appendChild(div)
+        => <body><div></div></body>
     
 */
