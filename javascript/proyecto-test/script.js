@@ -11,29 +11,25 @@
     <p class="card__status">Status: Alive</p>
     <p class="card__species">Species: Human</p>
   </article>
-</article>; */
+</article> */
 }
 
+//Funcion principal
 async function main() {
+  // Crear una constante con la URL de la API. => https://rickandmortyapi.com/
   const url = 'https://rickandmortyapi.com/api/character/';
-  const container = document.querySelector('.gallery');
 
+  //Hacer el fetch a la API
   const response = await fetch(url);
+  //Transformar la respuesta a JSON
   const data = await response.json();
+  //Crear una constante con los resultados de la transformación.
   const characters = data.results; // Un array de objetos con la info de cada personaje.
 
-  // characters.forEach((character) => {
-  //   container.innerHTML += `
-  //     <article class="card">
-  //       <img src="${character.image}" alt="${character.name}" class="card__img" />
-  //       <article class="card__info">
-  //         <h2 class="card__name">${character.name}</h2>
-  //         <p class="card__status">Status: ${character.status}</p>
-  //         <p class="card__species">Species: ${character.species}</p>
-  //       </article>
-  //     </article>
-  //   `;
-  // });
+  //Crear una constante con el elemento del DOM donde se van a insertar los personajes.
+  const container = document.querySelector('.gallery');
+
+  //Crear un elemento por cada personaje y agregarlo al DOM.
 
   characters.forEach((character) => {
     const card = document.createElement('article');
