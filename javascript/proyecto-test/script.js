@@ -30,7 +30,6 @@ async function main() {
   const container = document.querySelector('.gallery');
 
   //Crear un elemento por cada personaje y agregarlo al DOM.
-
   characters.forEach((character) => {
     const card = document.createElement('article');
     card.classList.add('card');
@@ -64,6 +63,50 @@ async function main() {
 
     container.appendChild(card);
   });
+
+  //**** EXTRA  *****/
+  //Crear una constante con el elemento del DOM que lee el input de búsqueda.
+  const input = document.querySelector('#inputSearch');
+  //Crear una constante con el elemento del DOM que contiene formulario de búsqueda.
+  const form = document.querySelector('#formSearch');
+  //Agregar un evento al formulario de búsqueda para que al hacer submit se ejecute la función de búsqueda.
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    container.innerHTML = '';
+    const mostrar = await searchCharacter(input.value);
+
+    mostrar.forEach((character) => {
+      container.innerHTML += `
+        <article class="card">
+          <img
+            src="${character.image}"
+            alt="${character.name}"
+            class="card__img"
+          />
+          <article class="card__info">
+            <h2 class="card__name">${character.name}</h2>
+            <p class="card__status">Status: ${character.status}</p>
+            <p class="card__species">Species: ${character.species}</p>
+          </article>
+        </article>`;
+    });
+  });
+
+  //Cree una funcion de busqueda de personajes que reciba como parametro el nombre del personaje a buscar.
 }
 
 main();
+
+//Funcion de busqueda
+async function searchCharacter(name) {
+  //Crear una constante con la URL de la API. => https://rickandmortyapi.com/
+  const url = `https://rickandmortyapi.com/api/character/?name=${name}`;
+  //Hacer el fetch a la API
+  const response = await fetch(url);
+  //Transformar la respuesta a JSON
+  const data = await response.json();
+  //Crear una constante con los resultados de la transformación.
+  const characters = data.results; // Un array de objetos con la info de cada personaje.
+
+  return characters;
+}
