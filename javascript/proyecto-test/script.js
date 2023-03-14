@@ -31,37 +31,19 @@ async function main() {
 
   //Crear un elemento por cada personaje y agregarlo al DOM.
   characters.forEach((character) => {
-    const card = document.createElement('article');
-    card.classList.add('card');
-
-    const img = document.createElement('img');
-    img.src = character.image;
-    img.alt = character.name;
-    img.classList.add('card__img');
-
-    const info = document.createElement('article');
-    info.classList.add('card__info');
-
-    const name = document.createElement('h2');
-    name.classList.add('card__name');
-    name.textContent = character.name;
-
-    const status = document.createElement('p');
-    status.classList.add('card__status');
-    status.textContent = `Status: ${character.status}`;
-
-    const species = document.createElement('p');
-    species.classList.add('card__species');
-    species.textContent = `Species: ${character.species}`;
-
-    info.appendChild(name);
-    info.appendChild(status);
-    info.appendChild(species);
-
-    card.appendChild(img);
-    card.appendChild(info);
-
-    container.appendChild(card);
+    container.innerHTML += `
+    <article class="card">
+      <img
+        src="${character.image}"
+        alt="${character.name}"
+        class="card__img"
+      />
+      <article class="card__info">
+        <h2 class="card__name">${character.name}</h2>
+        <p class="card__status">Status: ${character.status}</p>
+        <p class="card__species">Species: ${character.species}</p>
+      </article>
+    </article>`;
   });
 
   //**** EXTRA  *****/
@@ -73,6 +55,8 @@ async function main() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     container.innerHTML = '';
+    //Se asigna el arreglo de los datos que buscamos en la funcion a la variable que mostrará
+    // Se hace la logica anterior
     const mostrar = await searchCharacter(input.value);
 
     mostrar.forEach((character) => {
@@ -91,12 +75,11 @@ async function main() {
         </article>`;
     });
   });
-
-  //Cree una funcion de busqueda de personajes que reciba como parametro el nombre del personaje a buscar.
 }
 
 main();
 
+//Cree una funcion de busqueda de personajes que reciba como parametro el nombre del personaje a buscar.
 //Funcion de busqueda
 async function searchCharacter(name) {
   //Crear una constante con la URL de la API. => https://rickandmortyapi.com/
