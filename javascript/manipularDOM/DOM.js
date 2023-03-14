@@ -49,7 +49,7 @@
         => <input value="Hola mundo"/>
 
     * Crear nuevos nodos/etiquetas
-        document.createElement('div')
+        const div = document.createElement('div')
         => <div></div>
     
 */

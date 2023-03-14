@@ -42,18 +42,14 @@
 
     -Tipos de datos: En JavaScript, hay varios tipos de datos como números, cadenas, booleanos, objetos y matrices. Es importante comprender cómo funcionan y cómo se utilizan estos tipos de datos en el código.
 
+    -Funciones: Las funciones son un componente esencial de JavaScript, y son utilizadas para reutilizar el código y hacerlo más modular. Es importante entender cómo funcionan las funciones y cómo se pueden utilizar para crear código más eficiente.
+
     -DOM (Modelo de Objeto de Documento): Es importante entender cómo funciona el DOM ya que es una interfaz de programación que permite a los desarrolladores interactuar con los elementos HTML y CSS de una página web.
 
     -Eventos: Los eventos son una parte fundamental de la programación en JavaScript. Es importante comprender cómo funcionan los eventos y cómo se pueden utilizar para controlar la interacción del usuario con la página web.
-
-    -Funciones: Las funciones son un componente esencial de JavaScript, y son utilizadas para reutilizar el código y hacerlo más modular. Es importante entender cómo funcionan las funciones y cómo se pueden utilizar para crear código más eficiente.
 
     -Asincronismo: En JavaScript, las operaciones asincrónicas son comunes y es importante entender cómo funcionan las promesas y las funciones asincrónicas para manejar eficazmente este tipo de operaciones.
 
 ## Recursos utiles:
 
     - Documentacion oficial de javascript: https://developer.mozilla.org/es/docs/Web/JavaScript
-
-## TODO:
-
-- En la parte del DOM, practicar con appendChild, removeChild, etc
