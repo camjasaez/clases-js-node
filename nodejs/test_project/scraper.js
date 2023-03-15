@@ -22,7 +22,12 @@ const fetchData = async (URL) => {
   }
 };
 
-//scraper
+/**
+ * @name scraper
+ * @description Scraper function for ripley.cl
+ * @param {String} URL
+ * @returns
+ */
 const scraper = async (URL) => {
   const html = await fetchData(URL);
   const $ = cheerio.load(html);
